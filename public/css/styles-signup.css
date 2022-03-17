@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEE;
+    font-size: 1rem;
+}
+
+.main-content {
+    width: 650px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.fa-dev {
+    font-size: 70px;
+}
+
+h1 {
+    width: 80%;
+    margin: 7% auto 7% auto;
+    font-weight: 600;
+    font-size: 180%;
+    line-height: 160%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+}
+
+.input-div {
+    width: 40%;
+    margin: auto;
+}
+
+input {
+    height: 60%;
+    padding: 3.5%;
+    font-size: 110%;
+    border-width: 1px;
+}
+
+.top {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-width: 1px;
+}
+
+.bottom {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-width: 1px;
+}
+
+button {
+    margin-top: 10%;
+    height: 60%;
+    width: 100%;
+    padding: 4%;
+    font-size: 110%;
+    color: white;
+    background-color: #5463FF;
+    border-radius: 7px;
+    border-width: 1px;
+}
+
+footer {
+    margin-top: 10%;
+    font-size: 25px;
+}
+
+.fa-brands {
+    margin: 1.5%;
+    color: gray;
+}
+
+
+
+
+@media (max-width: 700px) {
+    .main-content {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 580px) {
+    body {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 520px) {
+    body {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 410px) {
+    body {
+        font-size: 0.55rem;
+    }
+}
+@media (max-width: 340px) {
+    body {
+        font-size: 0.45rem;
+    }
+}
