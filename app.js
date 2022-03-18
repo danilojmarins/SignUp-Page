@@ -5,7 +5,9 @@ const https = require('https');
 const response = require('express');
 const app = express();
 
-import { apiKey, listID } from 'config.js';
+const config = require('./config');
+const apiKey = config.apiKey;
+const listID = config.listID;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
