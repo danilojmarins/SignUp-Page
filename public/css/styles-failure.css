@@ -1,0 +1,27 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #DDD;
+    padding: 5% 3%;
+    margin: -10px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+button {
+    background-color: yellowgreen;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+    border-width: 0;
+    border-radius: 5px;
+    margin-left: 0.3%;
+    cursor: pointer;
+}

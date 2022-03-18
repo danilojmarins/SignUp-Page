@@ -31,7 +31,7 @@ form {
 }
 
 .input-div {
-    width: 40%;
+    width: 45%;
     margin: auto;
 }
 
@@ -46,12 +46,14 @@ input {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-width: 1px;
+    margin-bottom: 6px;
 }
 
 .bottom {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     border-width: 1px;
+    margin-top: 3px;
 }
 
 button {
@@ -64,6 +66,7 @@ button {
     background-color: #5463FF;
     border-radius: 7px;
     border-width: 1px;
+    cursor: pointer;
 }
 
 footer {
