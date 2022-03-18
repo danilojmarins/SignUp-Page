@@ -5,7 +5,7 @@ const https = require('https');
 const response = require('express');
 const app = express();
 
-const config = require('./config');
+const config = require(__dirname + '/config');
 const apiKey = config.apiKey;
 const listID = config.listID;
 
