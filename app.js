@@ -2,16 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
-const { response } = require('express');
+const response = require('express');
 const app = express();
-const port = 3000;
 
+import { apiKey, listID } from 'config.js';
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-app.listen(port, () => {
-    console.log(`Server listening on port: ${port}.`);
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server listening on port: 3000.`);
 })
 
 
@@ -45,11 +45,11 @@ app.post('/', (req, res) => {
 
     const jsonData = JSON.stringify(data);
 
-    const url = 'https://us14.api.mailchimp.com/3.0/lists/afdb0fc161';
+    const url = `https://us14.api.mailchimp.com/3.0/lists/${listID}`;
 
     const options = {
         method: 'POST',
-        auth: 'danilojmarins:ea7286511242ced359ff00d3f9689139-us14'
+        auth: `danilojmarins:${apiKey}`
     }
 
     const request = https.request(url, options, (response) => {
@@ -74,11 +74,3 @@ app.post('/', (req, res) => {
 app.post('/failure', (req, res) => {
     res.redirect('/');
 })
-
-
-
-// API Key
-// ea7286511242ced359ff00d3f9689139-us14
-
-// List ID
-// afdb0fc161
