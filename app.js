@@ -3,7 +3,8 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
 const response = require('express');
-require('dotenv').config({path: __dirname + '/.env'});
+const path = require('path');
+require('dotenv').config({path: path.resolve(__dirname + '/.env')});
 
 const app = express();
 
