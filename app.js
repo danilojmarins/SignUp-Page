@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
 const response = require('express');
-require('dotenv').config({path:__dirname + '/.env'});
+require('dotenv').config({path:__dirname + '\.env'});
 
 const app = express();
 
@@ -12,6 +12,7 @@ const listID = process.env.LIST_ID;
 const apiKey = process.env.API_KEY;
 
 console.log(process.env);
+console.log(__dirname);
 
 app.use(bodyParser.urlencoded({extended: true}));
 
