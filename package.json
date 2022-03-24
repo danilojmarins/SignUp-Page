@@ -4,13 +4,13 @@
   "description": "Sign-up Page Mailchimp API",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Danilo José Marins",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.2",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "request": "^2.88.2"
   }

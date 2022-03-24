@@ -3,11 +3,13 @@ const bodyParser = require('body-parser');
 const request = require('request');
 const https = require('https');
 const response = require('express');
+require('dotenv').config();
+
 const app = express();
 
-const config = require(__dirname + '/config.js');
-const apiKey = config.apiKey;
-const listID = config.listID;
+
+const listID = process.env.LIST_ID;
+const apiKey = process.env.API_KEY;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
