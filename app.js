@@ -11,7 +11,7 @@ const app = express();
 const listID = process.env.LIST_ID;
 const apiKey = process.env.API_KEY;
 
-console.log(apiKey);
+console.log(process.env);
 
 app.use(bodyParser.urlencoded({extended: true}));
 
